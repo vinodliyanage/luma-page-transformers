@@ -1,6 +1,4 @@
 class Transformer {
-  public hostname: string;
-
   title(text: string) {
     return text;
   }
@@ -19,6 +17,10 @@ class Transformer {
 
   url(text: string) {
     return text;
+  }
+
+  hostname() {
+    return "";
   }
 }
 

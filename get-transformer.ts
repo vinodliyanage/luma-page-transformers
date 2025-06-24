@@ -6,7 +6,9 @@ export default function getTransformer(url: string): Transformer | null {
 
   const urlObj = new URL(url);
 
-  const TransformerClass = transformers.find((t) => t.prototype.hostname === urlObj.hostname);
+  const TransformerClass = transformers.find((t) => {
+    return t.prototype.hostname() === urlObj.hostname;
+  });
 
   if (!TransformerClass) return null;
   return new TransformerClass();
