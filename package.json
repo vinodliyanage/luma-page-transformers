@@ -1,6 +1,6 @@
 {
   "name": "luma-page-transformers",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Domain-specific page transformers for the Luma Bookmark Manager. Clean, standardize, and customize bookmark metadata from any website.",
   "main": "dist/index.js",
   "keywords": [
@@ -9,7 +9,8 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "build": "tsc",
+    "publish": "npm publish"
   },
   "repository": {
     "type": "git",
