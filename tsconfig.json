@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2019", // Or a more recent target supported by your intended Node.js versions
+    "module": "commonjs", // Or "esnext" if you're building an ES module package and configure "type": "module" in package.json
+    "declaration": true, // VERY IMPORTANT: Generates .d.ts files for type definitions
+    "outDir": "./dist", // The output directory for compiled JS and .d.ts files
+    "strict": false, // Highly recommended for type safety
+    "esModuleInterop": true, // Recommended for better interoperability with CommonJS modules
+    "skipLibCheck": true, // Can speed up compilation by skipping type checking of declaration files
+    "forceConsistentCasingInFileNames": true // Good practice
+  },
+  "include": ["src/**/*"],
+  "paths": {
+    "@/*": ["./src/*"]
+  },
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}

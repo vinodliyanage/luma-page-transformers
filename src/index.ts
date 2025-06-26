@@ -1,5 +1,5 @@
-import Transformer from "./transformer";
 import transformers from "./domains";
+import Transformer from "./transformer";
 
 export default function getTransformer(url: string): Transformer | null {
   if (!URL.canParse(url)) return null;
@@ -11,5 +11,5 @@ export default function getTransformer(url: string): Transformer | null {
   });
 
   if (!TransformerClass) return null;
-  return new TransformerClass();
+  return new TransformerClass() as Transformer;
 }

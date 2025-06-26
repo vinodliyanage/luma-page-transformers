@@ -1,0 +1,27 @@
+{
+  "name": "luma-page-transformers",
+  "version": "0.0.1",
+  "description": "Domain-specific page transformers for the Luma Bookmark Manager. Clean, standardize, and customize bookmark metadata from any website.",
+  "main": "dist/index.js",
+  "keywords": [
+    "page transformer",
+    "luma bookmark manager"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinodliyanage/luma-page-transformers.git"
+  },
+  "author": "Vinod Liyanage <vinodsliyanage@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinodliyanage/luma-page-transformers/issues"
+  },
+  "homepage": "https://github.com/vinodliyanage/luma-page-transformers#readme",
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
